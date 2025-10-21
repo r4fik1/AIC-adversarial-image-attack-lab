@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+env/
+.env
+
+# Notebooks
+.ipynb_checkpoints
+
+# Data and models
+data/raw/
+data/processed/
+models/trained/
+*.pt
+*.pth
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Streamlit
+.streamlit/
