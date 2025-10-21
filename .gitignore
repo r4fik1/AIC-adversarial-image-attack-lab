@@ -1,28 +1,32 @@
 # Python
 __pycache__/
 *.py[cod]
-.env
-venv/
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
 env/
+venv/
 .env
+*.sqlite3
 
-# Notebooks
+# Jupyter
 .ipynb_checkpoints
 
-# Data and models
-data/raw/
-data/processed/
-models/trained/
+# PyTorch / models
 *.pt
 *.pth
+models/trained/
 
-# OS/IDE
-.DS_Store
+# Data
+data/raw/
+data/processed/
+
+# VSCode / mac
 .vscode/
-.idea/
+.DS_Store
 
-# Logs
+# Logs / Streamlit
 *.log
-
-# Streamlit
 .streamlit/

@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Lint (basic)
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Smoke test - python
         run: |
-          echo "No tests configured yet."
+          python -c "import sys; print('python ok', sys.version)"
